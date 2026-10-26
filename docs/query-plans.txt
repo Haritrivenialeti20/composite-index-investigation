@@ -1,0 +1,5 @@
+Wrong index (salary, department):
+SEARCH employees USING INDEX idx_salary_department (salary>?)
+
+Correct index (department, salary):
+SEARCH employees USING INDEX idx_department_salary (department=? AND salary>?)
